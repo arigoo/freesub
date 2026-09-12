@@ -21,31 +21,40 @@ proxies:
     headers:
       Host: ejomsxptp19apygl.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: ss
-  server: 103.136.150.237
-  port: 8388
-  cipher: aes-256-gcm
-  password: KSdf3qeTB5TGlFPn
+  type: vmess
+  server: mtckundigepwu3up.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mtckundigepwu3up.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: mtckundigepwu3up.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   type: vmess
-  server: m01c7b2z26dtqgee.v.3dns.vip
+  server: 47.83.19.148
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: M01c7B2z26DtQGEe.v.3dns.vip
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: M01c7B2z26DtQGEe.v.3dns.vip
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
+  server: ex1ogt73nzpqkac2.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -53,15 +62,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   type: vmess
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -77,7 +86,7 @@ proxies:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   type: vmess
-  server: 8.218.184.4
+  server: m01c7b2z26dtqgee.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -85,12 +94,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  servername: M01c7B2z26DtQGEe.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: M01c7B2z26DtQGEe.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
