@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: uae.unixzone.us
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
   server: uae.unixzone.us
@@ -32,9 +32,9 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 45.40.145.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -42,7 +42,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: vms.lifetime35.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
