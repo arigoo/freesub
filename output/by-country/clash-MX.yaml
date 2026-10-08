@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaohe
   type: ss
-  server: 147.78.1.234
-  port: 16673
+  server: 147.78.1.141
+  port: 16672
   cipher: aes-128-gcm
   password: 67c57ae584eecd70396fcd7ca7521130
   udp: true
