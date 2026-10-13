@@ -13,18 +13,48 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 63.141.128.22
+  server: 91.215.43.248
   port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vmess
+  server: renderer-stream-2-114.mirra.now
+  port: 443
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-114.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-114.mirra.now
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
+  server: 172.67.152.162
+  port: 443
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  network: ws
+  ws-opts:
+    path: /cmh
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
